@@ -8,14 +8,8 @@
       //get variables
       $fname = $_POST["fName"];
       $lname = $_POST["lName"];
-      $origin = $_POST["Origin"];
-      $destination = $_POST["Destination"];
-      $ddate = $_POST["dDate"];
-      $dtime = $_POST["dTime"];
-      $driver = $_POST["Driver"];
-      $seats = $_POST["Seats"];
+	  $email = $_POST["Email"];
       $pass = $_POST["Pass"];
-      $email = $_POST["Email"];
 
       //get variables from readDB.php
       include ("readDb.php");
@@ -28,7 +22,7 @@
 
                  include ("connectDb.php");
 
-     		 $sql = "INSERT INTO ridersdb (fName, lName, Origin, Destination, dDate, dTime, Driver, Seats, Pass, Email) VALUES ('$fname' ,'$lname', '$origin','$destination', '$ddate', '$dtime', '$driver', '$seats', '$pass', '$email')";
+     		 $sql = "INSERT INTO workersDB (fName, lName, Email, Pass) VALUES ('$fname' ,'$lname', '$email', '$pass')";
 
       		 $result = mysql_query($sql);
 

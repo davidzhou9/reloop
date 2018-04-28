@@ -4,7 +4,7 @@
       include ("connectDb.php");
 
       // Here is another way of making an SQL query.
-      $sqlt = "SELECT * FROM ridersdb WHERE Email = '$email'";
+      $sqlt = "SELECT * FROM workersDB WHERE Email = '$email'";
 
       // Again, Send the request
       $result = mysql_query($sqlt);

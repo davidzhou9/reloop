@@ -1,34 +1,55 @@
 <!-- The following echo commands generate standard HTML output for the browser to view. -->
 <HTML>
 <head>
-    <TITLE> Trekkera </TITLE>
-    <link href="styles/main.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>        
+    
+<TITLE> RELOOP </TITLE>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <script type ="text/javascript" src ="./JavaScript/loadSplashPage.js"></script>
 </head>
 
-<body onload="loadSplashPage()">
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="./html/register.html">Register</a></li>
-                    <li><a href="./html/page.html">Destinations</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body>
 
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">RELOOP</a>
+                  </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="../isindexSearch.php">Home</a></li>
+                      <li><a href="html/register.html">Register</a></li>
+                    </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+
+              </div>
+ 
     <center>
 
         <br><br><br><br>
-        <table border="0" width="95%" >
+        <table border="0" width="0%" >
+            <img src='reloop2.jpg'/> <br><br>   <!-- adding a picture -->
+        <BODY BGCOLOR="white" TEXT = "black">  
+
             <tr>
-                <th ALIGN=RIGHT>Sign In: </th>
-            </tr> 
-            <tr>
-                <td ALIGN=RIGHT>
+                <td ALIGN=middle>
             <FORM action="login.php" method="post">
             <P>
                 <LABEL for="email">Email:&nbsp &nbsp </LABEL>
@@ -43,18 +64,14 @@
         </table>
    
         <br>
-        <img src='Trekkera_logo.jpg' /> <br><br>   <!-- adding a picture -->
-        <BODY BGCOLOR="white" TEXT = "black">   <!-- setting background color -->
-        <p>Search locations to see if there is a trekker waiting to travel with you. </p>
+         <!-- setting background color -->
+       
 
 <!-- Notice the creation of a form in HTML. -->
 
 <!-- <form action= ""> tells says which page to send the results of the form to. -->
 <!-- <input type="text"> denotes a text input, the name="query" part -->
-        <form action="isindexSearch.php" method="get" style="margin:10px;">
-            <input type="text" placeholder="Enter State of Origin (ex: CA or California)" name="query" style="background-color:#D3D3D3;width:420px;height:30px;"/> <br>
-            <input type="submit" style="margin:5px;width:75px;" value="Search"/>
-        </form>      <!-- End the Form -->
+    <!-- End the Form -->
 
     </center>
 
