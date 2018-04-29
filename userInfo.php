@@ -8,7 +8,7 @@
       echo "<title> Empty fields </title>";
       echo '<BODY BGCOLOR="white" TEXT = "black">';
       echo "Empty Field. Please try again. Redirecting you back. ";
-      echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=isindexSearch.php">';
+      echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=homePage.php">';
       echo '</body>';
       echo '</html>';
 
@@ -21,7 +21,7 @@
           echo' <title> Email not found </title>';
           echo '<BODY BGCOLOR="white" TEXT = "black">';
           echo ' Email not found. Please try again. Redirecting you back. ';
-          echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=isindexSearch.php">';
+          echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=homePage.php">';
           echo '</body>';
           echo ' </html>';
 
@@ -31,7 +31,7 @@
                 echo ' <title> Incorrect Password </title>';
                 echo '<BODY BGCOLOR="white" TEXT = "black">';
                 echo "Wrong password. Please try again. Redirecting you back. ";
-                echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=isindexSearch.php">';
+                echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=homePage.php">';
                 echo '</body>';
                 echo ' </html>';
 
@@ -78,7 +78,7 @@
               echo "<br><br>";
               
               
-              echo '<br> <a href="isindexSearch.php"> Return to Homepage </a> <br>';
+              echo '<br> <a href="homePage.php"> Return to Homepage </a> <br>';
 
               echo '</center>';
               echo "<br>";

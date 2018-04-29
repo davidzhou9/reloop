@@ -48,7 +48,7 @@
 
       }  else {
           echo "<center>Email already exists. Please log-in. Redirecting you home<br>";
-          echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=isindexSearch.php">';
+          echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=homePage.php">';
       }
 
  ?>

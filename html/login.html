@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Recycling Feedback Form</title>
+
+</head>
+<body id="main_body" >
+	<center> <IMG src ="reloop2.jpg"> <br>
+	<div id="form_container">
+	
+		<h1><a>Feedback Form for Dorm Recycling</a></h1>
+		<div class="form_description">
+			<p>Please fill out the fields below for each dorm. Once you click submit, the feedback will automatically be sent to the dorm's residents.</p>
+		</div>						
+			<ul >
+			
+					<li id="li_2" >
+		<label class="description" for="element_2">Residential College </label>
+		<div>
+		<select class="element select medium" id="element_2" name="element_2"> 
+			<option value="" selected="selected"></option>
+<option value="1" >Forbes</option>
+<option value="2" >Whitman</option>
+<option value="3" >Wilson</option>
+<option value="4" >Butler</option>
+<option value="5" >Mathey</option>
+<option value="6" >Rocky</option>
+
+		</select>
+		</div><p class="guidelines" id="guide_2"><small>Please select the residential college.</small></p> 
+		</li>		<li id="li_1" >
+		<label class="description" for="element_1">Room Number </label>
+		<div>
+			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Please Rate Overall Quality of Recycling </label>
+		<span>
+			<input id="element_3_1" name="element_3" class="element radio" type="radio" value="1" />
+<label class="choice" for="element_3_1">5</label>
+<input id="element_3_2" name="element_3" class="element radio" type="radio" value="2" />
+<label class="choice" for="element_3_2">4</label>
+<input id="element_3_3" name="element_3" class="element radio" type="radio" value="3" />
+<label class="choice" for="element_3_3">3</label>
+<input id="element_3_4" name="element_3" class="element radio" type="radio" value="4" />
+<label class="choice" for="element_3_4">2</label>
+<input id="element_3_5" name="element_3" class="element radio" type="radio" value="5" />
+<label class="choice" for="element_3_5">1</label>
+
+		</span> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Please select issues found with recycling </label>
+		<span>
+			<input id="element_4_1" name="element_4_1" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_4_1">Coffee cups/plastic beverage pods</label>
+<input id="element_4_2" name="element_4_2" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_4_2">Plastic lids, straws and utensils</label>
+<input id="element_4_3" name="element_4_3" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_4_3">Plastic solo cups</label>
+<input id="element_4_4" name="element_4_4" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_4_4">Paper napkins, towels and plates</label>
+<input id="element_4_5" name="element_4_5" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_4_5">Plastic containers/styrofoam</label>
+<input id="element_4_6" name="element_4_6" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_4_6">Frozen food boxes, plastic wrappers</label>
+<input id="element_4_7" name="element_4_7" class="element checkbox" type="checkbox" value="1" />
+<label class="choice" for="element_4_7">Food/organic waste</label>
+
+		</span> 
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="8351" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	
+	<form id="returnHome" action="homePage.php">
+        <input type='submit' value='Return to Homepage'><br>
+    </form>
+	
+	<form id="userInfo" action="userInfo.php" method="post">
+        <input type='hidden' name='Email' value=$email />
+		<input type='hidden' name='Pass' value=$pass />
+        <input type='submit' value='Update'><br>
+    </form>
+	</body>
+</html>
