@@ -1,8 +1,11 @@
    <?php
 
    $email = $_POST["Email"];
-   $pass = $_POST["Pass"] ;
+   $pass = $_POST["Password"] ;
 
+	echo "Email is " . $email;
+	echo "Password is " . $pass;
+   
    if(!$email or !$pass){
       echo "<html>";
       echo "<title> Empty fields </title>";

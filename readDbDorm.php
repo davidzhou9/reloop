@@ -4,7 +4,7 @@
       include ("connectDb.php");
 
       // Here is another way of making an SQL query.
-      $sqlt = "SELECT * FROM workersDB WHERE Email = '$email'";
+      $sqlt = "SELECT * FROM dormRooms WHERE resCollege = '$selectRes' AND roomNum = '$roomNum'";
 
       // Again, Send the request
       $result = mysql_query($sqlt);
@@ -16,8 +16,7 @@
       else {
 		$found = number_format(mysql_num_rows($result));
 		$row = mysql_fetch_array($result);
-		$passdB = $row["Pass"];    //find password
+		$emailArray = array($row["emailOne"], $row["emailTwo"], $row["emailThree"], $row["emailFour"]);
       }
-
       mysql_close($conn);
 ?>
