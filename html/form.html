@@ -1,10 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 
 <TITLE> Feedback Form </TITLE>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <script type ="text/javascript" src ="./JavaScript/loadSplashPage.js"></script>
+		<script type ="text/javascript" src ="./JavaScript/loadSplashPage.js"></script>
 </head>
 
 <body id="main_body" >
@@ -23,7 +22,7 @@
                 <div id="navbar" class="navbar-collapse collapse">
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Home</a></li>
+                      <li class="active"><a href="homePage.php">Home</a></li>
                       <li><a href="html/register.html">Register</a></li>
                       <li><a href="html/about.html">About</a></li>
                     </ul>
@@ -37,82 +36,103 @@
  
     <center>
 	
-	
-	<div id="form_container">
-	
-		<h1>Feedback Form for Dorm Recycling</h1>
-		<div class="form_description">
-			<p>Please fill out the fields below for each dorm. Once you click submit, the feedback will automatically be sent to the dorm's residents.</p>
-		</div>						
-		
-		<form action = "formSubmission.php" method="post">
-			<ul >
-				<li id="li_1" >
-				<label class="description" for="resList">Residential College </label>
-				<div>
-					<select class="element select medium" id="resList" name="resList"> 
+	<h1>Feedback Form for Dorm Recycling</h1>
+		<h4>Please fill out the fields below for each dorm. Once you click submit, the feedback will automatically be sent to the dorm's residents.</h4>		
+			<form action = "formSubmission.php" method="post">
+				<div class="row">
+					<div class="col-lg-4 my-1">
+						<select class="custom select" id="resList" name="resList">
+						<option value="">Select a Residential College.</option>
 						<option value="Forbes" >Forbes</option>
 						<option value="Whitman" >Whitman</option>
 						<option value="Wilson" >Wilson</option>
 						<option value="Butler" >Butler</option>
 						<option value="Mathey" >Mathey</option>
 						<option value="Rocky" >Rocky</option>
-					</select>
+						</select> 
+					</div>
+					<div class = "col-lg-4 my-1">
+						<input id="dormname" name="dormname" class="element text medium" type="text" placeholder="Enter a Building Name.">
+					</div>
+						<div class = "col-lg-4 my-1">
+					<input id="roomNum" name="roomNum" class="element text medium" type="text" maxlength="255" placeholder="Enter a Room Number."/> 
+					</div>
 				</div>
-				</li>		<li id="li_2" >
-					<label class="description" for="roomNum">Room Number </label>
-					<div>
-						<input id="roomNum" name="roomNum" class="element text medium" type="text" maxlength="255" value=""/> 
-					</div> 
-				</li>		<li id="li_3" >
-					<label class="description" for="quality">Please Rate Overall Quality of Recycling </label>
+
+				<hr>
+
+				<div class="row">
+					<h6>Please rate overall quality of recycling.</h6>
 					<span>
+						<div class = "col-lg-3 my-1">
 						<input id="quality_1" name="quality" class="element radio" type="radio" value="1" />
 						<label class="choice" for="quality_1">1</label>
+						</div>
+						<div class = "col-lg-2 my-1">
 						<input id="quality_2" name="quality" class="element radio" type="radio" value="2" />
 						<label class="choice" for="quality_2">2</label>
+						</div>
+						<div class = "col-lg-2 my-1">
 						<input id="quality_3" name="quality" class="element radio" type="radio" value="3" />
 						<label class="choice" for="quality_3">3</label>
+						</div>
+						<div class = "col-lg-2 my-1">
 						<input id="quality_4" name="quality" class="element radio" type="radio" value="4" />
 						<label class="choice" for="quality_4">4</label>
+						</div>
+						<div class = "col-lg-3 my-1">
 						<input id="quality_5" name="quality" class="element radio" type="radio" value="5" />
 						<label class="choice" for="quality_5">5</label>
+						</div>
 					</span> 
-				</li>		<li id="li_4" >
-					<label class="description" for="issues[]">Please select issues found with recycling </label>
+				</div>		
+
+				<hr>
+
+				<div class="row">
+					<h6>Please select any non-recyclable items found within recycling.</h6>
 					<span>
+						<div class = "col-lg-2 my-1">
 						<input id="issues" name="issues[]" class="element checkbox" type="checkbox" value="Coffee cups/plastic beverage pods" />
 						<label class="choice" for="issues[]">Coffee cups/plastic beverage pods</label>
-						<input id="issues" name="issues[]" class="element checkbox" type="checkbox" value="Plastic lids, straws and utensils" />
-						<label class="choice" for="issues[]">Plastic lids, straws and utensils</label>
-						<input id="issues" name="issues[]" class="element checkbox" type="checkbox" value="Plastic solo cups" />
-						<label class="choice" for="issues[]">Plastic solo cups</label>
+						</div>
+						<div class = "col-lg-2 my-1">
+						<input id="issues" name="issues[]" class="element checkbox" type="checkbox" value="Plastic lids, solo cups, straws and utensils" />
+						<label class="choice" for="issues[]">Plastic lids, solo cups, straws and utensils</label>
+						</div>
+						<div class = "col-lg-2 my-1">
 						<input id="issues" name="issues[]" class="element checkbox" type="checkbox" value="Paper napkins, towels and plates" />
 						<label class="choice" for="issues[]">Paper napkins, towels and plates</label>
+						</div>
+						<div class = "col-lg-2 my-1">
 						<input id="issues" name="issues[]" class="element checkbox" type="checkbox" value="Plastic containers/styrofoam" />
 						<label class="choice" for="issues[]">Plastic containers/styrofoam</label>
+						</div>
+						<div class = "col-lg-2 my-1">
 						<input id="issues" name="issues[]" class="element checkbox" type="checkbox" value="Frozen food boxes, plastic wrappers" />
 						<label class="choice" for="issues[]">Frozen food boxes, plastic wrappers</label>
+						</div>
+						<div class = "col-lg-2 my-1">
 						<input id="issues" name="issues[]" class="element checkbox" type="checkbox" value="Food/organic wastes" />
 						<label class="choice" for="issues[]">Food/organic waste</label>
+						</div>
 					</span> 
-				</li>
+				</div>
 					
-				<li class="buttons">
+				<div class="buttons">
 					<input type="hidden" name="form_id" value="8351" /> 
 					<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
-				</li>
-			</ul>
-		</form>	
-	</div>
-	<img id="bottom" src="bottom.png" alt="">
+				</div>
+			</form>	
+		<img id="bottom" src="bottom.png" alt="">
 	
 	
 
 	
 	<form id="returnHome" action="homePage.php">
         <input type='submit' value='Return to Homepage'><br>
-    </form>
+		</form>
+	</div>
 	
 	</body>
 </html>
